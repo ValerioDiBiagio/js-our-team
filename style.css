@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Fredoka", sans-serif;
+}
+
 /* intestazione */
 
 header {
@@ -14,7 +18,7 @@ header {
 }
 
 h1 {
-    color: fuchsia;
+    color: #e53170;
     text-align: center;
     margin-top: 30px;
     font-size: 30px;
@@ -39,8 +43,13 @@ img {
     
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
 a {
     text-decoration: none;
+    color: #6ecbe3;
 }
 
 .row {
@@ -59,13 +68,13 @@ a {
 
 .box-pic {
     width: 30%;
-    background-color: aquamarine;
 }
 
 .box-text {
     width: 70%;
     padding: 20px;
-    background-color: black;
+    background-color: #000000;
     line-height: 30px;
-    color: white
+    color: #ffffff;
+    
 }
