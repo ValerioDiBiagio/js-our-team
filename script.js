@@ -36,3 +36,51 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+/*
+<div class="col">
+  <div class="box-pic">
+    <img src="img/male1.png" alt="">
+  </div>
+  <div class="box-text">
+    <h3>Marco Bianchi</h3>
+    <div class="role">Designer</div>
+    <div class="email"><a href="#">marcobianchi@team.com</a></div>
+  </div>
+</div> */
+
+const parentElement = document.querySelector('.row');
+
+function renderHtml(parent, members) {
+
+  let coWorkers = '';
+
+  for (let i = 0; i < members.length; i++) {
+
+    const currentElement = members[i];
+    console.log(members[i]);
+
+    coWorkers += createHtmlElement(currentElement)
+  
+  }
+
+  parent.innerHTML = coWorkers;
+
+}
+
+renderHtml(parentElement, teamMembers);
+
+function createHtmlElement(item) {
+  
+  return `<div class="col">
+  <div class="box-pic">
+    <img src="${item.img}" alt="${item.img}">
+  </div>
+  <div class="box-text">
+    <h3>${item.name}</h3>
+    <div class="role">${item.role}</div>
+    <div class="email"><a href="#">${item.email}</a></div>
+  </div>
+</div>`
+}
