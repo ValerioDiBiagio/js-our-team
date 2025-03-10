@@ -1,0 +1,71 @@
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* intestazione */
+
+header {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: fuchsia;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+/* corpo della pagina */
+
+main {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.col  {
+    width: calc((100% - 70px) / 3);
+    flex-shrink: 0;
+    display: flex;
+    
+}
+
+.box-pic {
+    width: 30%;
+    background-color: aquamarine;
+}
+
+.box-text {
+    width: 70%;
+    padding: 20px;
+    background-color: black;
+    line-height: 30px;
+    color: white
+}
